@@ -5,7 +5,7 @@ import Tv from "./Tv";
 import Top from "./Top";
 
 export const movieData = (size = 500, path) => {
-  return `https://image.tmdb.org/t/p/w${size}/${path}`;
+  return `https://image.tmdb.org/t/p/w${size}/${path}` ;
 };
 
 function Tvmain() {

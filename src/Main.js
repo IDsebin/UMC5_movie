@@ -1,6 +1,4 @@
 import "./App.css";
-import Movie from "./Movie";
-import { movies } from "./api";
 import { useState, useEffect } from "react";
 import Top from "./Top";
 import ad from "./ad.png";
@@ -21,7 +19,7 @@ function Main() {
   return (
     <div>
       <Top />
-      {image && <img src={ad} />}
+      {image && <img src={ad} alt="광고 이미지"/>}
       <button onClick={handleClick}>{image ? "광고 없애기" : "광고 보이기"}</button>
     </div>
   );
