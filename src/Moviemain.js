@@ -1,7 +1,6 @@
 import "./App.css";
 import Movie from "./Movie";
 import { movies } from "./api";
-import { useState } from "react";
 import Top from "./Top";
 
 export const movieData = (size = 500, path) => {
@@ -9,7 +8,7 @@ export const movieData = (size = 500, path) => {
 };
 
 function Moviemain() {
-  const [data, setData] = useState(movies.results);
+  const data= movies.results;
 
   console.log(data);
   return (

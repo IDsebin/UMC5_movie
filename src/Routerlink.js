@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Main from "./Main";
 import Moviemain from "./Moviemain";
@@ -10,8 +9,10 @@ import LoginPage from "./LoginPage";
 import Tvmain from "./Tvmain";
 
 function Routerlink() {
-  const [moviedata, setMovieData] = useState(movies.results); // 상태로 영화 데이터를 관리
-  const [tvdata, setTvData] = useState(tvs.results);
+  const moviedata = movies.results; // 상태로 영화 데이터를 관리
+  const tvdata = tvs.results;
+
+
   return (
     <div>
       <Router>
